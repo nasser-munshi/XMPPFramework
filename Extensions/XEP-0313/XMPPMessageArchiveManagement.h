@@ -22,7 +22,7 @@
  Use NSNotFound to indicate that there is no client-side page size preference.
  */
 @property (readwrite, assign) NSInteger resultAutomaticPagingPageSize;
-
+@property (readonly, nonatomic) NSString *queryID;
 - (void)retrieveMessageArchiveWithFields:(NSArray *)fields withResultSet:(XMPPResultSet *)resultSet;
 - (void)retrieveMessageArchiveAt:(XMPPJID *)archiveJID withFields:(NSArray *)fields withResultSet:(XMPPResultSet *)resultSet;
 - (void)retrieveFormFields;
